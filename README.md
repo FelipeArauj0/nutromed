@@ -3,7 +3,6 @@
 Site da **NutroMed | Clínica de Emagrecimento e Estética em Salvador**, desenvolvido com prioridade para navegação no celular e contato pelo WhatsApp.
 
 - **Repositório:** https://github.com/FelipeArauj0/nutromed
-- **Versão de revisão criada com Sites:** https://nutromed-salvador.janinegabriela76.chatgpt.site
 - **Proposta para análise comercial:** [proposta.md](proposta.md)
 
 A versão hospedada em Sites possui acesso controlado. O link acima não deve ser tratado como um domínio público da clínica. Este repositório é uma cópia independente do site; commits no GitHub não atualizam automaticamente a publicação de Sites.
