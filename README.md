@@ -124,14 +124,28 @@ Preserve `height:auto` na regra `.about-photo img`. Não fixe a altura de uma im
 
 ### Vercel
 
-Importe `FelipeArauj0/nutromed`. O `vercel.json` define:
+Importe `FelipeArauj0/nutromed` usando a branch `main`. O `vercel.json` já está na raiz e publica `dist/index.html` como a página inicial do domínio.
 
-- framework: nenhum;
-- build: nenhum;
-- diretório de saída: `dist`;
-- raiz do projeto: raiz do repositório.
+**A pasta `dist` funciona normalmente:** ela é o diretório público, não um impedimento à publicação. O site fica em `https://SEU-PROJETO.vercel.app/`, sem acrescentar `/dist` à URL.
 
-Não configure a saída como `public` nem espere um `npm run build`: esses caminhos e comandos não existem neste projeto. Confirme que configurações manuais do painel não contradizem o arquivo. A publicação pelo Vercel é separada da versão de Sites e requer importar o repositório na conta escolhida.
+| Configuração | Valor |
+| --- | --- |
+| Root Directory | Raiz do repositório (`./`; mantenha o campo padrão) |
+| Framework Preset | Other |
+| Build Command | Vazio — não existe compilação |
+| Install Command | Vazio — não existem dependências para instalar |
+| Output Directory | `dist` |
+| Production Branch | `main` |
+
+O arquivo define `framework: null`, `buildCommand: ""`, `installCommand: ""` e `outputDirectory: "dist"`. As configurações equivalentes no arquivo prevalecem sobre as do painel. **Root Directory é uma opção do painel:** não use `dist` como raiz com esta configuração, porque o arquivo `vercel.json` está na raiz do repositório.
+
+Se o projeto já estiver importado, confirme a raiz e publique o commit mais recente. Quando a integração de produção estiver ativa, novos commits na branch configurada normalmente iniciam um deployment. Caso isso não ocorra, use **Redeploy** de um deployment que já corresponda ao commit atualizado; recriar um deployment antigo não inclui alterações novas.
+
+Abra a URL do domínio na raiz (`/`) e confira se a página e `/assets/dr-marcel-portrait.jpg` carregam. Não há `npm run build`, `package.json` ou pasta `public` neste projeto.
+
+Se aparecer um 404, confira o diretório raiz, o commit publicado e a saída `dist` nos logs. Se houver falha de build, remova comandos manuais de framework que não se aplicam ao projeto. A configuração do repositório não permite verificar, por si só, o estado da conta ou do deployment da Vercel.
+
+A publicação na Vercel é independente da versão de Sites.
 
 ### Outro serviço estático
 
