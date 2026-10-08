@@ -26,7 +26,7 @@ A primeira versão organiza a apresentação da clínica em uma página com prio
 | Mensagem de WhatsApp conforme o assunto | Dá à recepção contexto inicial para orientar o atendimento |
 | Perguntas frequentes | Esclarece localização, agendamento e consulta de valores |
 | Endereço, Maps, telefone e Instagram | Reúne os principais caminhos de contato |
-| Referência datada às avaliações do Google | Permite consultar a reputação no canal de origem |
+| Depoimentos visíveis e referência datada às avaliações do Google | Permite ler experiências no próprio site e consultar outras no canal de origem |
 | Título e descrição da página | Dá uma identificação básica ao conteúdo nos mecanismos de busca |
 
 **Situação atual:** o site abre canais de contato. Ainda não mede acessos, não identifica a origem dos clientes, não cadastra leads, não confirma agendamentos e não atualiza avaliações automaticamente. A proposta abaixo descreve etapas adicionais, sujeitas à contratação e configuração.
@@ -83,6 +83,8 @@ A proposta é usar avaliações públicas e feedback privado como fontes complem
 | Atualizar a reputação exibida no site | Revisão manual da nota, quantidade e data; automação só com integração apropriada | Hoje a informação é manual e datada |
 
 O feedback privado não deve ser usado para esconder críticas ou selecionar apenas pessoas satisfeitas para avaliação pública. Respostas a comentários não devem revelar informações de atendimento ou saúde.
+
+**Depoimentos já exibidos:** trechos reais de Carla R, Jéssica Beatriz e Luiz Augusto Medrado, fornecidos no material inicial, aparecem em cartões no site. A seleção e a atualização são manuais; não há sincronização com o Google.
 
 **Referência disponível:** o registro enviado indicava nota 5,0 e 152 avaliações. Esses números representam aquele momento; não são uma confirmação da contagem atual e precisam de validação antes de campanhas ou divulgação atualizada.
 

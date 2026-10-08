@@ -39,7 +39,8 @@ A pasta e os identificadores internos de hospedagem do Sites não fazem parte de
 - Seletor de assunto para iniciar uma conversa com a equipe.
 - Botão de WhatsApp fixo na parte inferior do celular.
 - Link para localização no Google Maps, telefone e Instagram.
-- Nota e quantidade de avaliações como fotografia do registro fornecido, com aviso da data.
+- Três depoimentos reais visíveis na seção `#avaliacoes`, com nome do autor, estrelas e trechos do registro enviado.
+- Nota e quantidade de avaliações como fotografia do registro fornecido, com aviso da data e atualização manual.
 - Perguntas frequentes com abertura e fechamento nativos (`details`/`summary`).
 - Título e descrição da página, idioma pt-BR, textos alternativos, foco visível e suporte a preferência por movimento reduzido.
 - Abas com navegação por teclado: setas, Home e End. O menu fecha com Escape.
@@ -118,7 +119,7 @@ Este projeto **não possui `config.js`**. Edite diretamente `dist/index.html`.
 
 Preserve `height:auto` na regra `.about-photo img`. Não fixe a altura de uma imagem cuja largura diminui no celular. Se mudar a proporção da foto, atualize também `aspect-ratio`, `width` e `height`.
 
-**Atualizar avaliações:** altere a nota, a quantidade e a data em todos os pontos relacionados. O site não consulta o Google automaticamente; mantenha o aviso de que é um registro datado.
+**Atualizar avaliações:** edite os cartões em `id="avaliacoes"`. Cada `.review-card` contém o nome do autor, suas iniciais e o trecho real em `<blockquote>`. Preserve o texto original, use apenas avaliações efetivamente fornecidas e mantenha o aviso de atualização manual. Altere a nota, a quantidade, o texto acessível de `.review-score` e a data em todos os pontos relacionados. O site não consulta o Google automaticamente. O link secundário permite consultar o perfil no Google; imagens de avatar não são necessárias para os cartões.
 
 ## Publicar a exportação
 
